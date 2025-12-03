@@ -248,7 +248,7 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Frontend Designer";
+        content: "Engineer";
     }
     21%,
     40%{
@@ -256,7 +256,7 @@ span{
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "CSS Developer";
     }
     61%,
     80%{
@@ -264,7 +264,7 @@ span{
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Frontend Designer";
     }
 }
 
@@ -338,12 +338,16 @@ span{
 }
 
 .timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
+    /* padding-right: calc(30px); */
     text-align: right;
+    min-height: 180px;
+    box-sizing: border-box;
+    left: 0;
 }
 
 .timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
+    text-align: left;
 }
 
 .timeline-dot{
@@ -373,6 +377,7 @@ span{
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    
 }
 
 .timeline-content:hover{
@@ -392,6 +397,8 @@ span{
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+    max-width: 100%;
+    flex-grow: 1;
 }
 
 ::-webkit-scrollbar{
@@ -426,18 +433,19 @@ span{
 
 .service-box{
     background-color: var(--main-color);
-    height: 300px;
+    height: 400px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
+    box-sizing: border-box;
 }
 
 .service-box:hover{
     background: white;
     color: black;
-    border: 5px solidvar var(--main-color);
-    transform: scale(1.03);
+    border: 5px solid var(--main-color);
+    transform: scale(1.005);
 }
 
 .service-box .service-info{
@@ -447,13 +455,20 @@ span{
     max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 2rem 2rem;
 }
 
 .service-info h4{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 2;
+}
+
+.service-info h5{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2;
+    color: yellow;
 }
 
 .service-info p{
@@ -462,6 +477,7 @@ span{
     max-height: 100px;
     line-height: 1.7;
     margin: auto;
+    
 }
 
 .contact{
@@ -571,7 +587,7 @@ span{
     color: white;
 }
 
-@media(max-width:1285px){
+@media(max-width:1200px){
     html{
         font-size: 55%;
     }
@@ -583,7 +599,7 @@ span{
     }
 }
 
-@media(max-width:991px){
+@media(max-width:992px){
     header{
         padding: 2rem 3%;
     }
@@ -664,7 +680,7 @@ span{
     }
 
     .home-img img{
-        width: 56vw;
+        width: 55vw;
     }
 
     .projects h2{
