@@ -3,278 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahabrata Adhikary</title>
-    <link rel="website icon" type="jpg" href="images/pi.jpg.jpg">
+    <title>Mahabrata Adhikary | Web Developer</title>
+    <link rel="website icon" type="jpg" href="images/webicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+    <!-- Animated Background Wrapper -->
+    <div class="bg-animation-wrapper">
+        <div class="bg-glow"></div>
+        <div class="bg-glow-2"></div>
+    </div>
 
-    <body id="top">
+    <!-- Floating Shapes & Icons Layer -->
+    <div class="floating-elements">
+        <div class="float-item f1"><i data-lucide="code-2" size="48"></i></div>
+        <div class="float-item f2"><i data-lucide="palette" size="40"></i></div>
+        <div class="float-item f3"><i data-lucide="terminal" size="32"></i></div>
+        <div class="float-item f4"><i data-lucide="layers" size="52"></i></div>
+        <div class="float-item f5"><i data-lucide="cpu" size="36"></i></div>
+        <div class="float-item f6"><i data-lucide="box" size="44"></i></div>
+        <div class="float-item f1 blob" style="top: 30%; left: 70%;"></div>
+        <div class="float-item f2 blob" style="top: 70%; left: 10%; width: 200px; height: 200px;"></div>
+    </div>
 
-
-    <header class="header">
-
-        <a href="#about" class="logo"><span>Mahabrata</span></a>
-
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-        </ul>
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-         <a href="https://github.com/mahabrataadhikary" class="visit-btn">My GitHub</a>
-
-        <!-- <button class="visit-btn">Visit GitHub</button> -->
-
-    </header>
-    
-    
-    <section class="about" id="about">
-        <div class="about-container">
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Mahabrata</a>
             
-            <img src="images/profileimg.jpg" alt="">
+            <!-- MOBILE MENU TOGGLE -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu" id="toggle-icon"></i>
+            </button>
 
-
-            <div class="info-box">
-
-
-                <div class="text">
-                    <h3>Hello There!</h3>
-                    <h1>I'm Mahabarata Adhikary</h1>
-                    <span>Frontend Developer</span>
-                    <h4>───────  Based in West Bengal,IN  ───────</h4>
-                </div>
-
-
-                <div class="btn-group">
-                    <a href="https://drive.google.com/file/d/14HmkH6OUZLpQsue3L3v_esQqB-TgHO-k/view?usp=sharing" class="btn">VIEW RESUME <i class="fa-solid fa-file-arrow-down"></i></a>
-                    <a href="#contact" class="btn">LET'S TALK <i class="fa-solid fa-user"></i></a>
-                </div>
-
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/mahabrataadhikary/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:@mahabrataadhikary@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                </div>
-
-            </div>
-
-            
-
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </section>
+    </nav>
 
-
-    <section class="skills" id="skills">
-
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-info">
-
-            
-
-            <div class="grid">
-                
-                <div class="grid-card">
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML</span>
-
-                </div>
-
-
-                 <div class="grid-card">
-                    <i class="fa-brands fa-css"></i>
-                    <span>CSS</span>
-
-                </div>
-
-                
-                <div class="grid-card">
-                    <i class="fa-brands fa-js"></i>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                
-                <div class="grid-card">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <span>Git</span>
-
-                </div>
-
-
-                
-                <div class="grid-card">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub</span>
-
-                </div>
-
-                
-                <div class="grid-card">
-                    <i class="fa-solid fa-caret-up"></i>
-                    <span>Vercel</span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    
-    <section class="projects" id="projects">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="images/project4.png" alt="">
-                    <h3>Portfolio Website</h3>
-                    <p>Explore a collection of my featured web development projects. Each one reflects my growing skills in front-end design, clean UI development, and responsive, user-friendly interfaces. From interactive tools to polished layouts, these projects demonstrate my ability to turn ideas into functional and visually appealing digital experiences.</p>
-                    <div class="btn-group">
-                        <a href="https://mahabrataadhikary.github.io/portfolio-v2/" class="btn">Live Demo <i class="fa-solid fa-location-arrow"></i></a>
-                        
-                        <a href="https://github.com/mahabrataadhikary/portfolio-v2" class="btn">Code <i class="fa-brands fa-github"></i></a>
-                    </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="images/project5.png" alt="">
-                    <h3>School Website</h3>
-                    <p>Welcome to our school website, designed using HTML and CSS to provide a clear, user-friendly experience. This website showcases important information about our school, including academics, activities, and announcements. The layout is simple, responsive, and easy to navigate, making it accessible for students, teachers, and parents.</p>
-                    <div class="btn-group">
-                        <a href="https://mahabrataadhikary.github.io/school-website-design/" class="btn">Live Demo <i class="fa-solid fa-location-arrow"></i></a>
-                        
-                        <a href="https://github.com/mahabrataadhikary/school-website-design" class="btn">Code <i class="fa-brands fa-github"></i></a>
-                    </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="images/project3.png" alt="">
-                    <h3>Landing Page</h3>
-                    <p>A modern, fully responsive landing page designed with a mobile-first approach. It adapts seamlessly across all screen sizes, featuring a polished layout, intuitive navigation, and engaging visual elements. This project highlights my ability to combine design principles with front-end development techniques.</p>
-                    <div class="btn-group">
-                        <a href="https://mahabrataadhikary.github.io/landing-page/" class="btn">Live Demo <i class="fa-solid fa-location-arrow"></i></a>
-                        
-                        <a href="https://github.com/mahabrataadhikary/landing-page" class="btn">Code <i class="fa-brands fa-github"></i></a>
-                    </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/project1.png" alt="">
-                    <h3>Web Calculator</h3>
-                    <p>A simple yet efficient web-based calculator built using HTML, CSS, and JavaScript. It performs basic arithmetic operations with a clean layout and smooth button interactions. This project helped me strengthen my JavaScript logic, event handling, and UI structuring skills.</p>
-                    <div class="btn-group">
-                        <a href="https://mahabrataadhikary.github.io/web-calculator/" class="btn">Live Demo <i class="fa-solid fa-location-arrow"></i></a>
-                        
-                        <a href="https://github.com/mahabrataadhikary/web-calculator" class="btn">Code <i class="fa-brands fa-github"></i></a>
-                    </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/project2.png" alt="">
-                    <h3>Login Interface</h3>
-                    <p>A clean and user-friendly login interface created with a focus on usability and visual clarity. It includes form validation, structured layout, and a professional appearance suitable for real-world web applications. Through this project, I practiced layout design, form handling, and styling consistency.</p>
-                    <div class="btn-group">
-                        <a href="https://mahabrataadhikary.github.io/login-page/" class="btn">Live Demo <i class="fa-solid fa-location-arrow"></i></a>
-                        
-                        <a href="https://github.com/mahabrataadhikary/login-page" class="btn">Code <i class="fa-brands fa-github"></i></a>
-                    </div>
+    <!-- HOME (HERO) SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Mahabrata Adhikary</h1>
+            <p class="role-text">FRONTEND DEVELOPER</p>
+            <p style="max-width: 600px; margin: 1rem auto; color: var(--text-muted);">Web developer passionate about building clean & responsive web interfaces.</p>
+            <div class="hero-btns">
+                <a href="https://drive.google.com/file/d/14HmkH6OUZLpQsue3L3v_esQqB-TgHO-k/view" class="btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                    View Resume
+                </a>
+                <a href="#contact" class="btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg> Get In Touch
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <div class="skills-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p>Languages and tools I use to bring ideas to life.</p>
+            </div>
 
-    <section class="contact" id="contact">
-        
-        <div class="input-box">
-
-    
-            <h2 class="section-title">Contact Me</h2>
-        <form action="https://api.web3forms.com/submit" method="post">
-            <input type="hidden" name="access_key" value="096169e3-a7a7-4d0b-ae19-410aafe22884">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" name="name">
-                    <input type="email" placeholder="Email" name="email">
-                    <input type="text" name="message" placeholder="Your Message">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i data-lucide="code-2" size="40"></i>
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-level">Language</span>
+                </div>
+                <div class="skill-item">
+                    <i data-lucide="palette" size="40"></i>
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-level">Language</span>
+                </div>
+                
+                <div class="skill-item">
+                    <i data-lucide="git-fork" size="40"></i>
+                    <span class="skill-name">Git</span>
+                    <span class="skill-level">Version Control</span>
+                </div>
+                <div class="skill-item">
+                    <i data-lucide="github" size="40"></i>
+                    <span class="skill-name">GitHub</span>
+                    <span class="skill-level">Version Control</span>
+                </div>
+                <div class="skill-item">
+                    <i data-lucide="triangle" size="40"></i>
+                    <span class="skill-name">Vercel</span>
+                    <span class="skill-level">Tool</span>
+                </div>
+                <div class="skill-item">
+                    <i data-lucide="smartphone" size="40"></i>
+                    <span class="skill-name">Responsive</span>
+                    <span class="skill-level">Design</span>
                 </div>
             </div>
-            <div class="input-box">
-                <button type="submit" class="btn">Send Message</button>
-                Or Directly Connect to me
-                <address class="btn">
-                <a href="mailto:@mahabrataadhikary@gmail.com">mahabrataadhikary@gmail.com</a>
-                </address>
 
+            <div class="learning-section">
+                <h3>Currently Learning</h3>
+                <div class="learning-grid">
+                    <div class="learning-item">
+                        <i data-lucide="terminal" size="20"></i>JavaScript
+                    </div>
+                    <div class="learning-item">
+                        <i data-lucide="shield-check" size="20"></i> More Practicing
+                    </div>
+                </div>
             </div>
-        </form>
-     </div>       
+        </div>
     </section>
 
-    <footer class="footer">
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="container">
+            <div class="projects-header">
+                <h2 class="section-title">Projects</h2>
+                <p>A collection of my recent work.</p>
+            </div>
+            
+            <div class="project-grid">
 
 
-        <div class="social">
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="images/project4.png" alt="FocusTask">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Explore a collection of my featured web development projects. Each one reflects my growing skills in front-end design, clean UI development, and responsive, user-friendly interfaces. From interactive tools to polished layouts, these projects demonstrate my ability to turn ideas into functional and visually appealing digital experiences.</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahabrataadhikary/portfolio-v2" class="project-btn btn-github">
+                                <i data-lucide="github" size="16"></i> GitHub
+                            </a>
+                            <a href="https://mahabrata.vercel.app/" class="project-btn btn-demo">
+                                <i data-lucide="external-link" size="16"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <a href="https://github.com/mahabrataadhikary"><i class='fa-brands fa-github'></i></a>
-                <a href="mailto:@mahabrataadhikary@gmail.com"><i class='fa-solid fa-envelope'></i></a>
-                <a href="https://www.linkedin.com/in/mahabrataadhikary/"><i class='fa-brands fa-linkedin'></i></a>
-                <a href="https://www.instagram.com/mahabrataadhikary"><i class='fa-brands fa-instagram'></i></a>
 
+                <div class="project-card">
+                    <div class="project-media">
+                        <video autoplay muted loop playsinline poster="images/project5.png">
+                            <source src="" type="video/mp4">
+                            <img src="images/project1.png" alt="SwiftCart">
+                        </video>
+                    </div>
+                    <div class="project-content">
+                        <h3>School Website</h3>
+                        <p>Welcome to our school website, designed using HTML and CSS to provide a clear, user-friendly experience. This website showcases important information about our school, including academics, activities, and announcements. The layout is simple, responsive, and easy to navigate, making it accessible for students, teachers, and parents.</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahabrataadhikary/school-website-design" class="project-btn btn-github">
+                                <i data-lucide="github" size="16"></i> GitHub
+                            </a>
+                            <a href="https://mahabrataadhikary.github.io/school-website-design/" class="project-btn btn-demo">
+                                <i data-lucide="external-link" size="16"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="images/project6.png" alt="ZenSpaces">
+                    </div>
+                    <div class="project-content">
+                        <h3>Memory Match Master</h3>
+                        <p>It is a interesting game made with HTML,CSS and a little bit of JS. <br> How to play : Tap a card to reveal the hidden icon. Find two identical icons consecutively to lock them in. Clear the whole board to win!"Slow is smooth, smooth is fast." Focus on pattern recognition rather than speed to lower your total move count.</p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahabrataadhikary/memory-match-master" class="project-btn btn-github">
+                                <i data-lucide="github" size="16"></i> GitHub
+                            </a>
+                            <a href="https://memorymatchmaster.netlify.app/" class="project-btn btn-demo">
+                                <i data-lucide="external-link" size="16"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Let's Build Something Together</h2>
+                    <p>I'm currently looking for new opportunities and collaborations. My inbox is always open!</p>
+                    <div class="email-direct">
+                        <span style="font-size: 0.9rem; font-weight: 600;">You can also reach me directly via email:</span>
+                        <a href="mailto:mahabrataadhikary@gmail.com" class="email-link">
+                            <i data-lucide="mail" size="20"></i> mahabrata@gmail.com
+                        </a>
+                    </div>
+                </div>
 
-             <li>
-                <a href="#skills">Skills</a>
-            </li>
+                <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="096169e3-a7a7-4d0b-ae19-410aafe22884">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email ID</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-             <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-             <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-        </ul>
-
-        <p class="made-by">
-    Designed & built by <span class="accent-name">Mahabrata</span>
-  </p>
-
-        <span class="version">v2.0.1</span>
-
-
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/mahabrataadhikary" target="_blank" class="social-icon" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com/in/mahabrataadhikary" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://instagram.com/mahabrataadhikary" target="_blank" class="social-icon" aria-label="Instagram">
+                    <i data-lucide="instagram"></i>
+                </a>
+                <a href="https://twitter.com/mahabrataadk" target="_blank" class="social-icon" aria-label="Twitter">
+                    <i data-lucide="twitter"></i>
+                </a>
+                <a href="mailto:mahabrataadhikary@gmail.com" class="social-icon" aria-label="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+            
+            <div class="signature">
+                <span>Made by</span>
+                <a href="#home" class="brand-name">Mahabrata</a>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 | All rights reserved.
+            </div>
+        </div>
     </footer>
 
-    <a href="#top" class="back-to-top" aria-label="Back to top">𐍊</a>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
 
+        // MOBILE NAVIGATION LOGIC
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const toggleIcon = document.getElementById('toggle-icon');
 
-    <script src="script.js"></script>
+        const toggleMenu = () => {
+            navLinks.classList.toggle('active');
+            const isActive = navLinks.classList.contains('active');
+            
+            // Toggle icons using lucide set attribute
+            toggleIcon.setAttribute('data-lucide', isActive ? 'x' : 'menu');
+            lucide.createIcons();
+            
+            // Prevent scrolling when menu is open
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        };
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        // Intersection Observer for Scroll Animations
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            if (section.id !== 'home') {
+                observer.observe(section);
+            }
+        });
+
+        // Navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 10px 30px -10px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Form Submission Handler (Prevent default for demo)
+        document.getElementById('portfolio-contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            btn.innerText = "Message Sent!";
+            btn.style.background = "#10b981"; // Success green
+            e.target.reset();
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.background = "";
+            }, 3000);
+        });
+    </script>
 </body>
 </html>
